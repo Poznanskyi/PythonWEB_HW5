@@ -52,8 +52,7 @@ async def get_exchange(days=None):
 if __name__ == "__main__":
     if platform.system() == "Windows":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    logging.basicConfig(level=logging.DEBUG,
-                        format="%(threadName)s %(message)s")
+    logging.basicConfig(level=logging.DEBUG, format="%(threadName)s %(message)s")
     try:
         n = int(sys.argv[1])
     except IndexError:
